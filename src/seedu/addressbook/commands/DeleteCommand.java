@@ -41,14 +41,4 @@ public class DeleteCommand extends Command {
             return new CommandResult(Messages.MESSAGE_PERSON_NOT_IN_ADDRESSBOOK);
         }
     }
-
-    @Override
-    public CommandResult executePostCommand(CommandResult executeCommandResult) {
-        ListCommand listCommand = new ListCommand();
-        listCommand.setData(addressBook, relevantPersons);
-        CommandResult listCommandResult = listCommand.execute();
-
-        return new CommandResult(listCommandResult.feedbackToUser + "\n"
-                + executeCommandResult.feedbackToUser, addressBook.getAllPersons().immutableListView());
-    }
 }

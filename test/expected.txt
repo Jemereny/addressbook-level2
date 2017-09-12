@@ -31,8 +31,6 @@
 || Example: exit
 || ===================================================
 || Enter command: || [Command entered:  delete 1]
-|| 
-|| 0 persons listed!
 || The person index provided is invalid
 || ===================================================
 || Enter command: || [Command entered:  view 1]
@@ -286,27 +284,15 @@
 || The person index provided is invalid
 || ===================================================
 || Enter command: || [Command entered:  delete 2]
-|| 	1. Betsy Choo Tags: [secretive]
-|| 
-|| 1 persons listed!
 || Deleted Person: Charlie Dickson Phone: (private) 333333 Email: charlie.d@nus.edu.sg Address: 333, gamma street Tags: [school][friends]
 || ===================================================
 || Enter command: || [Command entered:  delete 2]
-|| 	1. Betsy Choo Tags: [secretive]
-|| 
-|| 1 persons listed!
 || Person could not be found in address book
 || ===================================================
 || Enter command: || [Command entered:  view 2]
-|| 	1. Betsy Choo Tags: [secretive]
-|| 
-|| 1 persons listed!
 || Person could not be found in address book
 || ===================================================
 || Enter command: || [Command entered:  viewall 2]
-|| 	1. Betsy Choo Tags: [secretive]
-|| 
-|| 1 persons listed!
 || Person could not be found in address book
 || ===================================================
 || Enter command: || [Command entered:  list]

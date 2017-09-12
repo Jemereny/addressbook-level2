@@ -73,7 +73,6 @@ Format: `delete INDEX`
 
 > Deletes the person at the specified `INDEX`. 
   The index refers to the index number shown in the most recent listing.
-> Shows the list of persons after deleting
 
 Examples: 
 * `list`<br>
