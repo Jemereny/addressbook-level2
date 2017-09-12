@@ -1,6 +1,7 @@
 package seedu.addressbook.commands;
 
 import seedu.addressbook.data.person.ReadOnlyPerson;
+import seedu.addressbook.data.person.UniquePersonList;
 
 import java.util.List;
 
@@ -20,6 +21,8 @@ public class ListCommand extends Command {
     @Override
     public CommandResult execute() {
         List<ReadOnlyPerson> allPersons = addressBook.getAllPersons().immutableListView();
+        UniquePersonList upl = addressBook.getAllPersons();
+
         return new CommandResult(getMessageForPersonListShownSummary(allPersons), allPersons);
     }
 }
