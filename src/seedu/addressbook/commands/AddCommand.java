@@ -80,7 +80,9 @@ public class AddCommand extends Command {
         listCommand.setData(addressBook, relevantPersons);
         CommandResult listCommandResult = listCommand.execute();
 
-        return new CommandResult(listCommandResult.feedbackToUser + "\n"
-                + executeCommandResult.feedbackToUser, addressBook.getAllPersons().immutableListView());
+        return new CommandResult(listCommandResult.feedbackToUser
+                + "\n"
+                + executeCommandResult.feedbackToUser,
+                addressBook.getAllPersons().immutableListView());
     }
 }
